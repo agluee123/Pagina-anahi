@@ -4,35 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anahi Bastos</title>
-
-    <!-- Agrega el enlace al archivo CSS de Bootstrap -->
+    <!-- Enlace a Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Agrega tu archivo de estilos personalizados -->
+    <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
-    <!-- Barra de navegación de Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Barra de navegación -->
+    <!-- Barra de navegación -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
       <div class="container">
-        <a class="navbar-brand" href="#">Anahi Bastos</a>
+        <a class="navbar-brand" href="#">
+          <img
+            src="/Pagina Anahi/imagenes/Dra_Anahi_Bastos-removebg-preview.png"
+            alt=""
+          />
+          <div class="d-flex align-items-center"></div>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#Inicio">Inicio</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#acerca-de">Acerca de</a>
             </li>
@@ -44,96 +62,215 @@
       </div>
     </nav>
 
-    <!-- Carrusel de Fotos -->
-    <div class="container">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="imagenes/cosmetologa-haciendo-tratamiento-facial-aplicando-mascarilla.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="imagenes/mujer-atractiva-recibiendo-procedimientos-belleza-facial-salon-spa.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="imagenes/Peeling-facial-1920-3.avif"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
+    
+    <!--Inicio carrusel de fotos-->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      style="max-height: 750px"
+    >
+      <div class="carousel-indicators">
         <button
-          class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
         <button
-          class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/Pagina Anahi/imagenes/cosmetologa-haciendo-tratamiento-facial-aplicando-mascarilla.jpg"
+            class="d-block w-100"
+            alt="..."
+            style="max-height: 750px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/Pagina Anahi/imagenes/mujer-atractiva-recibiendo-procedimientos-belleza-facial-salon-spa.jpg"
+            class="d-block w-100"
+            alt="..."
+            style="max-height: 750px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/Pagina Anahi/imagenes/Peeling-facial-1920-3.avif"
+            class="d-block w-100"
+            alt="..."
+            style="max-height: 750px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- FIN Carrusel de Fotos -->
+
+    <!-- informacion -->
+    <div class="container mt-5 text-center">
+      <h2 class="display-4">LOREM IPSUN</h2>
+      <p class="fs-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eligendi
+        nemo dolorum harum qui accusamus assumenda nisi mollitia ratione
+        perspiciatis odio deleniti et, nesciunt, modi nam? Facere natus optio
+        inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Culpa repellendus pariatur qui quo delectus, sint nemo eaque? Saepe odio
+        necessitatibus minus natus? Debitis atque animi vel eveniet sed quae
+        fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatem nesciunt iste optio eaque quidem aliquam, nobis corporis
+        praesentium similique reiciendis qui, quas autem quaerat dolorem magnam
+        amet. Cumque, ratione possimus.
+      </p>
+    </div>
+
+    <!-- FIN informacion -->
+
+    <!-- cards -->
+
+    <div class="container mt-5">
+      <h2 class="text-center">TRATAMIENTOS</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/Pagina Anahi/imagenes/mujer-atractiva-recibiendo-procedimientos-belleza-facial-salon-spa.jpg"
+              class="card-img-top card-img-custom"
+              alt="Tratamientos Faciales"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Tratamientos Faciales</h2>
+              <p class="card-text">
+                Nuestros tratamientos faciales médico-estéticos no invasivos te
+                ayudarán a recuperar la luminosidad de tu piel y rostro. Todos
+                ellos surgen a partir de un diagnóstico previo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/Pagina Anahi/imagenes/Peeling-facial-1920-3.avif"
+              class="card-img-top card-img-custom"
+              alt="Tratamientos Corporales"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Tratamientos Corporales</h2>
+              <p class="card-text">
+                Aplicamos las mejores técnicas y equipamiento de estética no
+                invasiva. Siempre realizamos un diagnóstico previo para
+                identificar la aplicación más adecuada a la afección.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/Pagina Anahi/imagenes/cosmetologa-haciendo-tratamiento-facial-aplicando-mascarilla.jpg"
+              class="card-img-top card-img-custom"
+              alt="Aparatología Estética"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Aparatología Estética</h2>
+              <p class="card-text">
+                Empleamos los mejores equipos y las últimas tecnologías más
+                avanzadas. Esto nos permite abarcar todas las áreas del cuerpo y
+                sus problemáticas, brindando a nuestros clientes el mejor
+                tratamiento.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Sección de Acerca de y Contacto (como se mostró en el ejemplo anterior) -->
 
-    <!-- Agrega los scripts de Bootstrap (opcional si deseas utilizar componentes JavaScript de Bootstrap) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- FIN cards -->
+
+
+     <!--Pie de pagina-->
+    <div class="pie de pagina mt-5">
+      <footer class="bg-dark text-white">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Contacto</h3>
+              <p>Dirección: 123 Calle Principal</p>
+              <p>Teléfono: (123) 456-7890</p>
+              <p>Email: ejemplo@example.com</p>
+            </div>
+            <div class="col-md-6">
+              <h3>Enlaces útiles</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--FIN Pie de pagina-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
   </body>
+  
+
+
 </html>

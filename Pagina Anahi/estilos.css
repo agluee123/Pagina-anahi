@@ -1,4 +1,54 @@
-.navbar{
-    background-color: red;
 
+/* Estilos para resaltar las palabras en la barra de navegación */
+.navbar-nav .nav-link {
+  font-weight: bold; /* Hace que las palabras en la barra de navegación sean más gruesas */
+  font-size: 20px; /* Cambia el tamaño de las palabras según tus preferencias */
+  text-transform: uppercase; /* Convierte el texto en mayúsculas */
+  margin-right: 20px; /* Agrega margen derecho para separar más las palabras */
+}
+
+/* Cambia el color de fondo y el color del texto al pasar el ratón (efecto hover) */
+.navbar-nav .nav-link:hover {
+  background-color: #ff9900; /* Cambia el color de fondo al pasar el ratón */
+  color: #fff; /* Cambia el color del texto al pasar el ratón */
+}
+
+.navbar-brand img {
+  width: 500px; /* Ajusta el ancho según tus preferencias */
+  height: auto; /* Mantiene la proporción de aspecto */
+  margin-right: 10px; /* Agrega margen derecho si es necesario */
+  padding-top: 130px;
+}
+
+/* Ajusta la altura de la barra de navegación */
+/* Ajusta la altura de la barra de navegación */
+.navbar {
+  height: 80px; /* Cambia este valor según sea necesario */
+  padding: 10px 0; /* Ajusta el relleno (padding) superior e inferior según sea necesario */
+}
+
+
+/* Estilo personalizado para separar el carrusel del contenido */
+.container {
+  padding-top: 20px; /* Ajusta el valor según sea necesario */
+}
+
+.card-img-custom {
+  width: 100%; /* Ancho completo de la tarjeta */
+  height: 300px; /* Altura deseada de la tarjeta */
+  object-fit: cover; /* Escala y recorta la imagen para que encaje en la tarjeta */
+}
+
+/* Estilo personalizado para el título del carrusel */
+.carousel-caption h5 {
+  font-family: 'TuFuentePersonalizada', sans-serif;
+  font-size: 50px; /* Tamaño de fuente personalizado */
+  /* Otros estilos de fuente personalizados */
+}
+
+/* Estilo personalizado para el párrafo del carrusel */
+.carousel-caption p {
+  font-family: 'TuFuentePersonalizada', sans-serif;
+  font-size: 35px; /* Tamaño de fuente personalizado */
+  /* Otros estilos de fuente personalizados */
 }
